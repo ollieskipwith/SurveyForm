@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <h1 id="title">Experience Feedback Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our service.</p>
+        </header>
+        <form id="survey-form" class="survey-form">
+            <fieldset class="name">
+                <label id="name-label">Full name: <input id="name" type="text" required placeholder="Your first and last name..."></label>
+            </fieldset>
+            <fieldset class="email">
+                <label id="email-label">Email: <input id="email" type="email" required placeholder="Your email..."></label>
+            </fieldset>
+            <fieldset class="age">
+                <label id="number-label">Age: <input id="number" type="number" placeholder="Your age..." min="13" max="120"></label>
+            </fieldset>
+            <fieldset class="feedback">
+                <label id="dropdown-label">Which option best describes your experience with us? </label>
+                <select class="dropdown" id="dropdown" required>
+                    <option>(Select one of the options below)</option>
+                    <option>An incredible experience</option>
+                    <option>An enjoyable experience</option>
+                    <option>A worthwhile experience</option>
+                    <option>An unenjoyable experience</option>
+                </select>
+            </fieldset>
+            <fieldset class="additional">
+                <label>Any additional comments about your experience with us?</label>
+                <textarea></textarea>
+            </fieldset>
+            <fieldset class="recommend">
+                <label>Would you recommend our paintballing experience to a friend?</label>
+                <label class="radio">Definitely<input class="radio" type="radio" name="recommend" value="definitely"></label>
+                <label class="radio">Maybe<input class="radio" value="maybe" type="radio" name="recommend"></label>
+                <label class="radio">No<input class="radio" type="radio" name="recommend" value="no"></label>
+            </fieldset>
+            <fieldset class="improve">
+                <label>Where do you think we can improve?</label>
+                <label class="checkbox">Our paintballing equipment<input type="checkbox" value="equipment"></label>
+                <label class="checkbox">Our food<input type="checkbox" value="food"></label>
+                <label class="checkbox">Our staff<input type="checkbox" value="staff"></label>
+                <label class="checkbox">Our pricing<input type="checkbox" value="pricing"></label>
+            </fieldset>
+            <fieldset class="submit-button">
+                <button type="submit" class="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
